@@ -1,0 +1,26 @@
+{
+  "name": "fastify-typeorm-realworld-example-app",
+  "version": "0.0.1",
+  "description": "Fastify + TypeOrm - Realworld Example App",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avanelli/fastify-typeorm-realworld-example-app.git"
+  },
+  "keywords": [
+    "Fastify",
+    "TypeOrm",
+    "Realworld",
+    "example",
+    "node.js"
+  ],
+  "author": "Andrea Vanelli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avanelli/fastify-typeorm-realworld-example-app/issues"
+  },
+  "homepage": "https://github.com/avanelli/fastify-typeorm-realworld-example-app#readme"
+}
