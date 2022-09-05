@@ -16,7 +16,7 @@
   },
   "keywords": [
     "Fastify",
-    "TypeOrm",
+    "Knex.js",
     "Realworld",
     "example",
     "node.js"
