@@ -6,7 +6,7 @@
   "scripts": {
     "create:env": "node -r fs -e \"fs.copyFileSync('.env.sample', '.env', fs.constants.COPYFILE_EXCL)\"",
     "start": "node .",
-    "dev": "nodemon .",
+    "dev": "nodemon . | pino-pretty",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "test": ""
@@ -30,6 +30,7 @@
   "homepage": "https://github.com/avanelli/fastify-typeorm-realworld-example-app#readme",
   "dependencies": {
     "@fastify/autoload": "^5.3.1",
+    "@fastify/cors": "^8.1.0",
     "@fastify/jwt": "^6.3.2",
     "env-schema": "^5.0.0",
     "fastify": "^4.5.3",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19",
+    "pino-pretty": "^9.1.0",
     "standard": "^17.0.0"
   }
 }
