@@ -13,10 +13,6 @@ const main = async () => {
 
   const address = await server.listen(config.fastify)
   server.log.info(`Server running at: ${address}`)
-
-  /* app.register(AutoLoad, {
-    dir: join(__dirname, 'plugins')
-  }) */
 }
 
 main()
