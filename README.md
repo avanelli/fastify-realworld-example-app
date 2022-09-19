@@ -1,5 +1,7 @@
 # ![RealWorld Example App](logo.png)
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 > ### [Fastify](https://github.com/fastify/fastify) + [Knex.js](https://github.com/knex/knex) codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
 
 
