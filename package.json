@@ -32,6 +32,7 @@
     "@fastify/autoload": "^5.3.1",
     "@fastify/cors": "^8.1.0",
     "@fastify/jwt": "^6.3.2",
+    "bcrypt": "^5.0.1",
     "env-schema": "^5.0.0",
     "fastify": "^4.5.3",
     "fastify-plugin": "^4.2.1",
@@ -41,6 +42,7 @@
     "sqlite3": "^5.0.11"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
     "nodemon": "^2.0.19",
     "pino-pretty": "^9.1.0",
     "standard": "^17.0.0"
