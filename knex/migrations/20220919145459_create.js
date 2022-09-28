@@ -7,7 +7,7 @@ exports.up = function (knex) {
 
     .createTable('users', function (table) {
       table
-        .uuid('id')
+        .integer('id')
         .unique()
         .primary()
         .notNullable()
