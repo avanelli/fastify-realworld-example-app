@@ -1,7 +1,7 @@
 {
-  "name": "fastify-typeorm-realworld-example-app",
+  "name": "fastify-realworld-example-app",
   "version": "0.0.1",
-  "description": "Fastify + TypeOrm - Realworld Example App",
+  "description": "Fastify + Knex.js - Realworld Example App",
   "main": "index.js",
   "scripts": {
     "create:env": "node -r fs -e \"fs.copyFileSync('.env.sample', '.env', fs.constants.COPYFILE_EXCL)\"",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avanelli/fastify-typeorm-realworld-example-app.git"
+    "url": "git+https://github.com/avanelli/fastify-realworld-example-app.git"
   },
   "keywords": [
     "Fastify",
@@ -25,9 +25,9 @@
   "author": "Andrea Vanelli",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/avanelli/fastify-typeorm-realworld-example-app/issues"
+    "url": "https://github.com/avanelli/fastify-realworld-example-app/issues"
   },
-  "homepage": "https://github.com/avanelli/fastify-typeorm-realworld-example-app#readme",
+  "homepage": "https://github.com/avanelli/fastify-realworld-example-app#readme",
   "dependencies": {
     "@fastify/autoload": "^5.3.1",
     "@fastify/cors": "^8.1.0",
