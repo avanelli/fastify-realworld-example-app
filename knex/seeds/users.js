@@ -16,9 +16,9 @@ exports.seed = async function (knex) {
         username: faker.name.firstName(),
         password: bcrypt.hashSync(`user${i}pass`, 10),
         bio: faker.lorem.sentences(),
-        image: faker.image.avatar()
-        // created_at: new Date().toISOString(),
-        // updated_at: new Date().toISOString(),
+        image: faker.image.avatar(),
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString()
       }
     })
   )
