@@ -27,7 +27,7 @@ exports.up = function (knex) {
 
     .createTable('articles', function (table) {
       table
-        .uuid('id')
+        .integer('id')
         .unique()
         .primary()
         .notNullable()
@@ -52,7 +52,7 @@ exports.up = function (knex) {
 
     .createTable('comments', function (table) {
       table
-        .uuid('id')
+        .integer('id')
         .unique()
         .primary()
         .notNullable()
@@ -72,7 +72,7 @@ exports.up = function (knex) {
 
     .createTable('favorites', function (table) {
       table
-        .uuid('id')
+        .integer('id')
         .unique()
         .primary()
         .notNullable()
@@ -91,7 +91,7 @@ exports.up = function (knex) {
 
     .createTable('followers', function (table) {
       table
-        .uuid('id')
+        .integer('id')
         .unique()
         .primary()
         .notNullable()
@@ -111,7 +111,7 @@ exports.up = function (knex) {
 
     .createTable('tags', function (table) {
       table
-        .uuid('id')
+        .integer('id')
         .unique()
         .primary()
         .notNullable()
@@ -124,7 +124,7 @@ exports.up = function (knex) {
 
     .createTable('articles_tags', function (table) {
       table
-        .uuid('id')
+        .integer('id')
         .unique()
         .primary()
         .notNullable()
