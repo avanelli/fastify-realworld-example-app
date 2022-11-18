@@ -19,8 +19,14 @@ For more information on how to this works with other frontends/backends, head ov
 
 > WIP
 
-# Getting started
+## Getting started
 
 > npm create:env
+
 > npm start
 
+## Contributing
+If you found a bug please submit an Issue and a PR if you are willing to fix this.
+
+If you want to suggest a better style please open an issue explaining how we can improve this project.
+We need to agree before submitting any PR about style.
