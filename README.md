@@ -4,9 +4,7 @@
 
 > ### [Fastify](https://github.com/fastify/fastify) + [Knex.js](https://github.com/knex/knex) codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
 
-
 ### [Demo](https://demo.realworld.io/)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
-
 
 This codebase was created to demonstrate a fully fledged fullstack application built with **Fastify + Knex.js** including CRUD operations, authentication, routing, pagination, and more.
 
@@ -14,27 +12,55 @@ We've gone to great lengths to adhere to the **Fastify + Knex.js** community sty
 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
-
 # How it works
 
-> WIP
+## Knex and Data
 
-## Getting started
+The codebase makes use of in memory Sqlite3 database accessed via Knex.js
 
-> npm create:env
+You can find [migrations](/knex/migrations/) and [seeds](/knex/seeds/) in [/knex](/knex/) folder
 
-> npm start
+All the database logics are in [/models](/models/) folder
+## Fastify and Routes
 
-## Running API tests locally
+The Fastify server is setup in [/server.js](/server.js) file.
+
+It automatically loads all the routes from [/routes](/routes/) folder and plugins from [/plugins](/plugins/) folder using [@fastify-autoload](https://github.com/fastify/fastify-autoload) plugin.
+
+All routes and plugins are wrappeed inside a [fastify-plugin](https://github.com/fastify/fastify-plugin)
+
+# Getting started
+
+Install dependencies and create `.env` file copying `.env.example`. You can customize it.
+
+```
+npm install
+npm create:env
+```
+Run api server
+
+```
+npm start
+```
+You can also start the server in developer mode with autoreload and better logs (nodemon and pino-pretty).
+
+```
+npm run dev
+```
+# Running API tests locally
 
 To locally run the provided Postman collection against your backend, execute:
 
 ```
 APIURL=http://localhost:5000/api ./run-api-tests.sh
 ```
+# Contributing
 
-## Contributing
-If you found a bug please submit an Issue and a PR if you are willing to fix this.
+If you find a bug please submit an Issue and, if you are willing, a Pull Request.
 
-If you want to suggest a better style please open an issue explaining how we can improve this project.
-We need to agree before submitting any PR about style.
+If you want to suggest a different best practice, style or project structure please open an issue explaining how we can improve this project. 
+
+We need your help to make this project better and keep it up to date!
+
+# License
+MIT
