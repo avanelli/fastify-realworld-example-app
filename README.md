@@ -1,6 +1,7 @@
 # ![RealWorld Example App](logo.png)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![CI](https://github.com/avanelli/fastify-realworld-example-app/workflows/CI/badge.svg)
 
 > ### [Fastify](https://github.com/fastify/fastify) + [Knex.js](https://github.com/knex/knex) codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
 
@@ -20,12 +21,12 @@ The codebase makes use of in memory Sqlite3 database accessed via Knex.js
 
 You can find [migrations](/knex/migrations/) and [seeds](/knex/seeds/) in [/knex](/knex/) folder
 
-All the database logics are in [/models](/models/) folder
+All the database logics are in [/models](/lib/models/) folder
 ## Fastify and Routes
 
-The Fastify server is setup in [/server.js](/server.js) file.
+The Fastify server is setup in [/server.js](/lib/server.js) file.
 
-It automatically loads all the routes from [/routes](/routes/) folder and plugins from [/plugins](/plugins/) folder using [@fastify-autoload](https://github.com/fastify/fastify-autoload) plugin.
+It automatically loads all the routes from [/routes](/lib/routes/) folder and plugins from [/plugins](/lib/plugins/) folder using [@fastify-autoload](https://github.com/fastify/fastify-autoload) plugin.
 
 All routes and plugins are wrappeed inside a [fastify-plugin](https://github.com/fastify/fastify-plugin)
 
