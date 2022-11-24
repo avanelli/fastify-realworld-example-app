@@ -25,6 +25,14 @@ For more information on how to this works with other frontends/backends, head ov
 
 > npm start
 
+## Running API tests locally
+
+To locally run the provided Postman collection against your backend, execute:
+
+```
+APIURL=http://localhost:5000/api ./run-api-tests.sh
+```
+
 ## Contributing
 If you found a bug please submit an Issue and a PR if you are willing to fix this.
 
