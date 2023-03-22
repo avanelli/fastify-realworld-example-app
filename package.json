@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
+    "fetch-mock": "^9.11.0",
     "nodemon": "^2.0.20",
     "pino-pretty": "^9.1.1",
     "standard": "^17.0.0",
