@@ -54,6 +54,20 @@ To locally run the provided Postman collection against your backend, execute:
 ```
 APIURL=http://localhost:5000/api ./run-api-tests.sh
 ```
+
+You can also run TAP tests
+```
+npm test
+```
+
+
+# EXTRA
+
+There is an additional endpoint to get the sentiment score of a text.
+
+```sh
+curl -d '{"content":"You have done an excellent job. Well done!"}' -H "Content-Type: application/json" -X POST http://localhost:5000/api/sentiment/score
+```
 # Contributing
 
 If you find a bug please submit an Issue and, if you are willing, a Pull Request.
@@ -64,3 +78,4 @@ We need your help to make this project better and keep it up to date!
 
 # License
 MIT
+
